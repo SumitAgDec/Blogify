@@ -8,7 +8,7 @@ const Blog = require('./models/blog.model');
 
 
 const app = express()
-const port = process.env.PORT || 8004
+const port = 'https://blogify-2-snt5.onrender.com/'
 
 const userRouter = require('./routes/user');
 const blogRouter = require('./routes/blog');
