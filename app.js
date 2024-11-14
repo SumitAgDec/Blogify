@@ -8,7 +8,7 @@ const Blog = require('./models/blog.model');
 
 
 const app = express()
-const port = process.env.PORT || 8004
+const port = process.env.PORT
 
 const userRouter = require('./routes/user');
 const blogRouter = require('./routes/blog');
