@@ -8,7 +8,7 @@ const Blog = require('./models/blog.model');
 
 
 const app = express()
-const port = process.env.PORT
+const port = process.env.PORT || 10000;
 
 const userRouter = require('./routes/user');
 const blogRouter = require('./routes/blog');
@@ -35,4 +35,4 @@ app.get('/', async (req, res)=>{
 app.use('/user', userRouter)
 app.use('/blog', blogRouter)
 
-app.listen(port, ()=> console.log(`Server is running at port: ${port}`))
+app.listen(port,'0.0.0.0', ()=> console.log(`Server is running at port: ${port}`))
